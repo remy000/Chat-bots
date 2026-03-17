@@ -27,9 +27,9 @@ class RAGSystem:
         try:
             # Initialize LLM
             self.llm = ChatOpenAI(
-                model="gpt-4o-mini-2024-07-18",
+                model="gemini-2.5-pro",
                 api_key=os.getenv("OPENAI_API_KEY"),
-                base_url=os.getenv("OPENAI_BASE_URL", "https://ai-gateway.andrew.cmu.edu/"),
+                base_url=os.getenv("OPENAI_BASE_URL", "https://ai-gateway.andrew.cmu.edu"),
                 temperature=0.7
             )
             
@@ -37,7 +37,7 @@ class RAGSystem:
             self.embeddings = OpenAIEmbeddings(
                 model="azure/text-embedding-3-small",
                 api_key=os.getenv("OPENAI_API_KEY"),
-                base_url=os.getenv("OPENAI_BASE_URL", "https://ai-gateway.andrew.cmu.edu/")
+                base_url=os.getenv("OPENAI_BASE_URL", "https://ai-gateway.andrew.cmu.edu")
             )
             
             # Load or create vector store
