@@ -1,17 +1,17 @@
-# 🏋️‍♀️ Fitness & Nutrition Chatbot 🥗
+#  Fitness & Nutrition Chatbot 
 
 An AI-powered chatbot that provides personalized fitness and nutrition advice using FastAPI, React.js, and RAG (Retrieval-Augmented Generation) technology.
 
-## ✨ Features
+## Features
 
-- 💬 **Smart Chat Interface**: Ask questions about fitness, nutrition, and health
-- 🎯 **Personalized Recommendations**: Tailored advice based on your profile
-- 📚 **Knowledge Base**: Powered by fitness and nutrition documents
-- 🔍 **RAG System**: Retrieves relevant information for accurate responses
-- 📱 **Responsive Design**: Works on desktop and mobile devices
-- 👤 **User Profiles**: Save your fitness goals and dietary preferences
+-  **Smart Chat Interface**: Ask questions about fitness, nutrition, and health
+- **Personalized Recommendations**: Tailored advice based on your profile
+- **Knowledge Base**: Powered by fitness and nutrition documents
+-  **RAG System**: Retrieves relevant information for accurate responses
+- **Responsive Design**: Works on desktop and mobile devices
+- **User Profiles**: Save your fitness goals and dietary preferences
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **FastAPI**: High-performance Python web framework
@@ -24,7 +24,7 @@ An AI-powered chatbot that provides personalized fitness and nutrition advice us
 - **Axios**: API communication
 - **CSS3**: Modern styling with gradients and animations
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fitness-nutrition-chatbot/
@@ -51,7 +51,7 @@ fitness-nutrition-chatbot/
 └── README.md
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -79,7 +79,7 @@ copy .env.example .env
 python main.py
 ```
 
-The backend will be available at `http://localhost:8000`
+The backend will be available at `http://localhost:port`
 
 ### 2. Frontend Setup
 
@@ -102,8 +102,8 @@ The frontend will be available at `http://localhost:3000`
 Create a `.env` file in the backend directory:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_BASE_URL=https://ai-gateway.andrew.cmu.edu/
+OPENAI_API_KEY
+OPENAI_BASE_URL
 CHROMA_PERSIST_DIRECTORY=./chroma_db
 HOST=localhost
 PORT=8000
@@ -120,7 +120,7 @@ The system uses documents in the `knowledge_base/` directory:
 
 You can add more `.txt` files to expand the knowledge base.
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Sample Questions to Ask:
 
@@ -139,7 +139,7 @@ You can add more `.txt` files to expand the knowledge base.
 - "What are some quick lunch recipes?"
 - "How do I meal prep for the week?"
 
-## 🏗️ API Endpoints
+##  API Endpoints
 
 ### POST /chat
 Send a message to the chatbot
@@ -188,7 +188,7 @@ Get recommendations for fitness or nutrition
 - Create new models in `app/models.py`
 - Enhance RAG functionality in `app/rag_system.py`
 
-## 🧪 Testing
+## Testing
 
 ### Backend Testing
 ```bash
@@ -204,7 +204,7 @@ cd frontend
 npm test
 ```
 
-## 📦 Deployment
+## Deployment
 
 ### Backend Deployment
 - Use Docker for containerization
@@ -215,19 +215,13 @@ npm test
 - Build the React app: `npm run build`
 - Deploy to static hosting (Netlify, Vercel, AWS S3)
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Troubleshooting
 
 ### Common Issues
 
@@ -245,20 +239,3 @@ This project is licensed under the MIT License.
 - Ensure knowledge base files exist
 - Check ChromaDB permissions
 - Verify OpenAI API key has embedding access
-
-### Getting Help
-
-- Check the API documentation at `http://localhost:8000/docs`
-- Review the browser console for frontend errors
-- Check backend logs for detailed error messages
-
-## 🎉 Next Steps
-
-- Add user authentication and data persistence
-- Integrate with fitness tracking APIs
-- Add image upload for food recognition
-- Implement progress tracking and analytics
-- Add voice chat capabilities
-- Create mobile app version
-
-Happy coding! 🚀
